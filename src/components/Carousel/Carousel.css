@@ -1,0 +1,40 @@
+/* src/components/Carousel/carousel.css */
+
+.carousel {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-slides {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.slide {
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.active {
+  transform: translateX(0);
+}
+
+button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    min-width: 80%;
+  }
+}
