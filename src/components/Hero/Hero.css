@@ -1,0 +1,20 @@
+/* src/components/Hero/hero.css */
+
+.hero {
+  height: 100vh; /* Full height of the viewport */
+  background-size: cover; /* Cover the entire size of the container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* For positioning any additional content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh; /* You can adjust this value to change the height on mobile */
+    background-position: top center; /* Adjust the position for mobile if needed */
+  }
+}

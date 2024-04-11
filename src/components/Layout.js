@@ -1,7 +1,7 @@
 import React from "react";
 
 import Navbar from "./Navbar/Navbar";
-import LandingPage from "./LandingPage/LandingPage";
+import Hero from "./Hero/Hero";
 import History from "./History/History";
 import Team from "./Team/Team";
 import Footer from "./Footer/Footer";
@@ -12,7 +12,7 @@ const Layout = () => {
   return (
     <div className="layout">
       <Navbar />
-      <LandingPage />
+      <Hero />
       <History />
       <Team />
       <Footer />
