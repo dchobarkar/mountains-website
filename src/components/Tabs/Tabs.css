@@ -1,12 +1,12 @@
-/* src/components/Tabs/tabs.css */
-
 .tabs {
-  margin-top: 2rem;
+  background-color: rgba(0.7, 0.7, 0.7, 0.5);
 }
 
 .tab-titles {
+  width: 75%;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .tab-title {
@@ -23,33 +23,40 @@
 
 .tab-title.active {
   border-bottom-color: #fff;
-}
-
-.tab-content {
-  height: 400px; /* Set height for your tab content areas */
-  background-size: cover;
-  background-position: center;
-  transition: opacity 0.5s ease;
-  opacity: 0;
-  display: none;
-}
-
-.tab-content.active {
-  opacity: 1;
-  display: block;
+  background-color: rgba(0.7, 0.7, 0.7, 0.1);
 }
 
 .tab-panel {
+  width: 100%;
+  height: 75vh;
   background-size: cover;
   background-position: center;
   transition: all 0.5s ease;
-  display: none; /* Hide non-active tabs */
-  padding: 2rem;
+  display: none;
   color: #fff;
 }
 
 .tab-panel.active {
-  display: block; /* Show active tab */
+  display: block;
+}
+
+.tab-content-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.tab-content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.tab-table {
+  max-width: 350px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
 }
 
 .tab-content h3 {
@@ -64,7 +71,6 @@
 
 .schedule-list li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid #fff; /* White border for list items */
 }
 
 .schedule-list span {
@@ -78,6 +84,6 @@
   }
 
   .tab-content {
-    height: 200px; /* Adjust the height for mobile view */
+    height: 200px;
   }
 }

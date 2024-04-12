@@ -1,17 +1,14 @@
-// src/components/Hero/Hero.js
-
 import React from "react";
+
+import HeroBG from "../../assets/hero-bg.png";
 import "./Hero.css";
-import heroImageWithText from "../../assets/hero-image.png"; // Replace with your actual hero image path that includes the text
 
 const Hero = () => {
   return (
-    <div
+    <section
       className="hero"
-      style={{ backgroundImage: `url(${heroImageWithText})` }}
-    >
-      {/* Additional content, if needed, can go here */}
-    </div>
+      style={{ backgroundImage: `url(${HeroBG})` }}
+    ></section>
   );
 };
 

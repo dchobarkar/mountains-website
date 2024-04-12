@@ -1,29 +1,27 @@
 import React from "react";
 
 import Carousel from "../Carousel/Carousel";
-import historyBackground from "../../assets/history-bg.png"; // Replace with the path to your history section background image
-
+import HistoryBG from "../../assets/history-bg.png";
 import "./History.css";
 
 const History = () => {
   return (
-    <section className="history">
-      <img
-        src={historyBackground}
-        alt="History Background"
-        className="history-bg"
-      />
+    <section id="history" className="history">
+      <img src={HistoryBG} alt="History Background" className="history-bg" />
+
       <div className="history-overlay">
-        <div className="history-text">
-          <h2 className="history-title">01 HISTORY</h2>
-          <p className="history-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Proin Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Proin Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Proin Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Proin Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Proin{" "}
-          </p>
+        <div className="history-box">
+          <div className="history-text">
+            <h2 className="history-title">01 HISTORY</h2>
+
+            <p className="history-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+            </p>
+          </div>
         </div>
       </div>
       <Carousel />

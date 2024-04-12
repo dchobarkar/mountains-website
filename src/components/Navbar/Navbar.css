@@ -1,21 +1,25 @@
 .navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.nav-div {
+  width: 75%;
+  padding: 1rem 2rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem 2rem; */
-  position: absolute; /* Initial position */
-  width: 100%;
-  top: 0;
-  left: 0;
-  transition: all 0.3s ease; /* Smooth transition for background */
-  z-index: 10; /* Ensure the navbar is above other content */
 }
 
 .navbar.sticky {
-  position: fixed; /* Fixed when sticky */
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-  animation: slideDown 0.5s ease forwards; /* Slide down animation */
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.5s ease forwards;
 }
 
 @keyframes slideDown {
@@ -27,8 +31,16 @@
   }
 }
 
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo img {
   height: 50px;
+}
+.logo span {
+  padding-left: 1rem;
 }
 
 .nav-links {
@@ -42,38 +54,36 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: black;
   font-weight: bold;
+  font-size: 12px;
+  font-style: italic;
 }
 
 .mobile-menu-icon {
   display: none;
-  background: none; /* Ensure the button has no background */
-  border: none; /* Remove any default border */
+  background: none;
+  border: none;
   cursor: pointer;
-  color: #333; /* Adjust the color as needed */
+  color: #333;
 }
 
 @media (max-width: 768px) {
   .nav-links {
+    width: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
     flex-direction: column;
     align-items: center;
-    position: fixed; /* Fixed for mobile */
-    width: 100%;
     display: none;
-    top: 60px; /* Adjust based on your header's height */
-    left: 0;
-    background-color: rgba(
-      255,
-      255,
-      255,
-      0.9
-    ); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.9);
     transition: all 0.3s ease;
   }
 
   .nav-links.mobile {
     display: flex;
+    padding: 0;
   }
 
   .nav-links li {

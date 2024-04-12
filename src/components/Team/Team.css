@@ -1,19 +1,18 @@
-/* src/components/Team/team.css */
-
 .team {
-  text-align: center;
-  padding: 4rem 0; /* Adjust based on your design */
-  color: #fff; /* Assuming white text */
+  width: 100%;
 }
 
 .team-content {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
+  width: 75%;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .team-title {
-  font-size: 3rem; /* Adjust based on your design */
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -22,7 +21,6 @@
   margin-bottom: 2rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .team-title {
     font-size: 2rem;

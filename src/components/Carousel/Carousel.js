@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
+import Carousel1 from "../../assets/carousel-1.png";
+import Carousel2 from "../../assets/carousel-2.png";
+import Carousel3 from "../../assets/carousel-3.png";
+import Carousel4 from "../../assets/carousel-4.png";
 import "./Carousel.css";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [
-    "../../assets/carousel-1.png",
-    "../../assets/carousel-2.png",
-    "../../assets/carousel-3.png",
-    "../../assets/carousel-4.png",
-  ];
+
+  const images = [Carousel1, Carousel2, Carousel3, Carousel4];
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -22,18 +22,23 @@ const Carousel = () => {
   };
 
   return (
-    <div className="carousel">
-      <button onClick={goToPrevious}>&lt;</button>
-      <div className="carousel-slides">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`slide ${index === currentIndex ? "active" : ""}`}
-            style={{ backgroundImage: `url(${image})` }}
-          />
-        ))}
+    <div className="carousel-box">
+      <div className="carousel">
+        <button onClick={goToPrevious}>&lt;</button>
+
+        <div className="carousel-slides">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              className={`slide ${index === currentIndex ? "active" : ""}`}
+              src={image}
+              alt={`carousel${index}`}
+            />
+          ))}
+        </div>
+
+        <button onClick={goToNext}>&gt;</button>
       </div>
-      <button onClick={goToNext}>&gt;</button>
     </div>
   );
 };

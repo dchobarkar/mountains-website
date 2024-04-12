@@ -31,30 +31,38 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${sticky ? "sticky" : ""}`}>
-      <div className="logo">
-        <img src={logo} alt="Los Angeles Mountains Logo" />
+      <div className="nav-div">
+        <div className="logo">
+          <img src={logo} alt="Los Angeles Mountains Logo" />
+          {sticky && (
+            <span>
+              LOSANGELES <br /> MOUNTAINS
+            </span>
+          )}
+        </div>
+
+        <ul className={`nav-links ${isMobile && "mobile"}`}>
+          <li>
+            <a href="#history" onClick={() => setIsMobile(false)}>
+              01. HISTORY
+            </a>
+          </li>
+
+          <li>
+            <a href="#team" onClick={() => setIsMobile(false)}>
+              02. TEAM
+            </a>
+          </li>
+        </ul>
+
+        <button
+          className="mobile-menu-icon"
+          onClick={toggleMobileMenu}
+          style={{ background: "none" }}
+        >
+          {isMobile ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
-
-      <ul className={`nav-links ${isMobile && "mobile"}`}>
-        <li>
-          <a href="#history" onClick={() => setIsMobile(false)}>
-            01. HISTORY
-          </a>
-        </li>
-        <li>
-          <a href="#team" onClick={() => setIsMobile(false)}>
-            02. TEAM
-          </a>
-        </li>
-      </ul>
-
-      <button
-        className="mobile-menu-icon"
-        onClick={toggleMobileMenu}
-        style={{ background: "none" }}
-      >
-        {isMobile ? <FaTimes /> : <FaBars />}
-      </button>
     </nav>
   );
 };

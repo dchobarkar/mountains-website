@@ -1,30 +1,25 @@
-/* src/components/Footer/footer.css */
-
 .footer {
-  background-color: #304d6d; /* Based on the image provided */
+  width: 100%;
+  background-color: #304d6d;
   color: #ffffff;
   padding: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .footer-container {
-  width: 100%;
-  max-width: 1200px; /* Adjust as per your layout's width */
+  width: 75%;
   margin: 0 auto;
-  padding: 0 2rem; /* Add some padding on the sides */
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-logo {
-  height: 50px; /* Adjust based on your logo's aspect ratio */
+  height: 50px;
 }
 
 .footer-text {
-  font-size: 0.875rem; /* Adjust if needed */
+  font-size: 0.875rem;
 }
 
 @media (max-width: 768px) {
@@ -35,5 +30,9 @@
 
   .footer-logo {
     margin-bottom: 1rem;
+  }
+
+  .footer-text {
+    font-size: 0.75rem;
   }
 }
