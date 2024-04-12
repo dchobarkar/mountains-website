@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   background-color: #304d6d;
-  color: #ffffff;
+  color: #63769d;
   padding: 1rem 0;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .footer-text {
-  font-size: 0.875rem;
+  font-size: 12px;
 }
 
 @media (max-width: 768px) {

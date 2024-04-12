@@ -12,7 +12,9 @@ const History = () => {
       <div className="history-overlay">
         <div className="history-box">
           <div className="history-text">
-            <h2 className="history-title">01 HISTORY</h2>
+            <h2 className="history-title">
+              <span>01.</span> HISTORY
+            </h2>
 
             <p className="history-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin

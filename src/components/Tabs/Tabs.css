@@ -1,5 +1,5 @@
 .tabs {
-  background-color: rgba(0.7, 0.7, 0.7, 0.5);
+  background-color: #414f6b;
 }
 
 .tab-titles {
@@ -22,8 +22,9 @@
 }
 
 .tab-title.active {
-  border-bottom-color: #fff;
   background-color: rgba(0.7, 0.7, 0.7, 0.1);
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
 
 .tab-panel {
@@ -55,18 +56,20 @@
 
 .tab-table {
   max-width: 350px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 1rem 2rem;
 }
 
 .tab-content h3 {
-  font-size: 1.5rem;
+  color: #414f6b;
+  font-size: 32px;
   margin-bottom: 1rem;
 }
 
 .schedule-list {
   list-style: none;
   padding: 0;
+  font-size: 16px;
 }
 
 .schedule-list li {
@@ -75,15 +78,12 @@
 
 .schedule-list span {
   font-weight: bold;
+  margin-right: 3rem;
 }
 
 @media (max-width: 768px) {
   .tab-title {
     font-size: 0.9rem;
     padding: 0.5rem;
-  }
-
-  .tab-content {
-    height: 200px;
   }
 }

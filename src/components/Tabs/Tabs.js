@@ -59,16 +59,16 @@ const Tabs = () => {
               <h3>SCHEDULE</h3>
               <ul className="schedule-list">
                 <li>
-                  <span>25 Nov 2016</span> Vestibulum viverra
+                  <span>17 Nov 2016</span> Vestibulum viverra
                 </li>
                 <li>
-                  <span>28 Nov 2016</span> Vestibulum viverra
+                  <span>13 Dec 2016</span> Vestibulum viverra
                 </li>
                 <li>
-                  <span>18 Dec 2016</span> Vestibulum viverra
+                  <span>28 Dec 2016</span> Vestibulum viverra
                 </li>
                 <li>
-                  <span>7 Jan 2017</span> Vestibulum viverra
+                  <span>9 Feb 2017</span> Vestibulum viverra
                 </li>
               </ul>
             </div>

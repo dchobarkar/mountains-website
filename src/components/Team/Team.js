@@ -8,12 +8,12 @@ const Team = () => {
     <section id="team" className="team">
       <div className="team-content">
         <h2 className="team-title">
-          02.
-          <br /> CLIMB
+          <span>02.</span> CLIMB
         </h2>
         <p className="team-description">
-          Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida
-          quis hendrerit ac...
+          Cras scelerisque id quam sed dignissim Pellentesque urna nunc, quis
+          Cras scelerisque id quam sed dignissim Pellentesque urna nunc, quis
+          hendrerit ac...
         </p>
       </div>
       <Tabs />
